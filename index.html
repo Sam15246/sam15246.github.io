@@ -220,6 +220,8 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 .proj-link svg{width:13px;height:13px}
 .proj-title{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.65rem}
 .proj-desc{color:var(--sub);font-size:.85rem;line-height:1.78;flex:1;margin-bottom:1.2rem}
+.proj-award{align-self:flex-start;font-size:.68rem;padding:.2rem .65rem;background:rgba(52,211,153,.09);border:1px solid rgba(52,211,153,.22);border-radius:100px;color:var(--ag);margin:-.2rem 0 .85rem}
+.proj-demo{align-self:flex-start;margin-top:.1rem;font-family:var(--mono);font-size:.72rem;color:var(--accent);text-decoration:none}.proj-demo:hover{text-decoration:underline}
 
 /* ── EDUCATION & CERTS ──────────── */
 .edu-cert-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
@@ -351,7 +353,7 @@ footer a{color:var(--accent);text-decoration:none}
       <div class="stat" data-val="2" data-suf="+"><span class="stat-n">2+</span><div class="stat-l">Years Experience</div></div>
       <div class="stat" data-val="4" data-suf=""><span class="stat-n">4</span><div class="stat-l">Markets Shipped</div></div>
       <div class="stat" data-val="10" data-suf=""><span class="stat-n">10</span><div class="stat-l">Production Issues Caught</div></div>
-      <div class="stat" data-val="9.54" data-suf=""><span class="stat-n">9.54</span><div class="stat-l">B.Tech CGPA</div></div>
+      <div class="stat"><span class="stat-n">50–75%</span><div class="stat-l">Less Debug Time</div></div>
     </div>
   </div>
   <!-- TERMINAL -->
@@ -475,6 +477,14 @@ footer a{color:var(--accent);text-decoration:none}
     <div class="sline"></div>
   </div>
   <div class="projects-grid">
+    <div class="proj fade-in">
+      <div class="proj-head"><div class="proj-icon">🛒</div><a href="https://github.com/Sam15246/Log2Base2_CodeFury" class="proj-link" target="_blank" rel="noopener" aria-label="GitHub repository"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg></a></div>
+      <div class="proj-title">Subscription Food Commerce — Java Backend</div>
+      <span class="proj-award">🏆 Top 5 of 70 teams · CodeFury hackathon</span>
+      <p class="proj-desc">Team hackathon project — built the Java backend: a layered DAO → service design over 8 MySQL tables covering subscription plans (daily to monthly), recurring deliveries and orders. Orders are generated on each delivery date instead of up front. 18 custom exceptions, injection-safe JDBC and 198 JUnit 5 + Mockito tests.</p>
+      <div class="tags"><span class="tag">Java</span><span class="tag">JDBC</span><span class="tag">MySQL</span><span class="tag">Maven</span><span class="tag">JUnit 5</span><span class="tag">Mockito</span></div>
+      <a class="proj-demo" href="https://drive.google.com/file/d/1WLrqsfYTkh6bq2bYZF3m80zxqo9tkIqZ/view?usp=sharing" target="_blank" rel="noopener">▶ Backend demo video ↗</a>
+    </div>
     <div class="proj fade-in">
       <div class="proj-head"><div class="proj-icon">🅿️</div><a href="https://github.com/Sam15246/veichle_parking_app_21f1004482_mad_2" class="proj-link" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg></a></div>
       <div class="proj-title">Vehicle Parking Management System</div>
@@ -633,6 +643,7 @@ function countUp(el, target, suffix, dur=1600) {
 const statObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) {
+      if (!e.target.dataset.val) { statObs.unobserve(e.target); return; } // static stats (e.g. ranges) don't count up
       const val = parseFloat(e.target.dataset.val);
       const suf = e.target.dataset.suf || '';
       countUp(e.target.querySelector('.stat-n'), val, suf);
