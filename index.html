@@ -257,20 +257,10 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 .life-icon{font-size:1.6rem;line-height:1;margin-bottom:.75rem}
 .life-title{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.4rem}
 .life-desc{color:var(--sub);font-size:.9rem;line-height:1.7}
-.reels{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1.1rem;margin-top:1.1rem}
-.reel{min-width:0;border-radius:var(--r);overflow:hidden}
-.reel-play{width:100%;min-height:190px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.35rem;padding:1.5rem;border:1px solid var(--border);border-radius:var(--r);cursor:pointer;color:var(--text);font-family:var(--font);text-align:center;background:radial-gradient(circle at 30% 20%,rgba(129,140,248,.16),transparent 60%),radial-gradient(circle at 80% 90%,rgba(56,189,248,.14),transparent 55%),var(--bg-card);transition:border-color var(--t)}
-.reel-play:hover{border-color:var(--ba)}
-.reel-icon{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#38bdf8,#818cf8);color:#fff;margin-bottom:.45rem;box-shadow:0 4px 20px rgba(56,189,248,.25)}
-.reel-icon svg{width:20px;height:20px;margin-left:3px}
-.reel-t{font-size:1rem;font-weight:700}
-.reel-s{font-size:.8rem;color:var(--sub)}
-.reel.loaded{overflow:visible}
-.reel .instagram-media{margin:0 auto!important;min-width:0!important;max-width:100%!important;width:100%!important}
-.reel iframe{min-width:0!important;max-width:100%!important}
-.reel blockquote a{display:inline-flex;align-items:center;min-height:44px;color:var(--accent);font-family:var(--mono);font-size:.85rem;text-decoration:none}
-.ig-cta{text-align:center;margin-top:1.75rem}
-.ig-cta .btn{min-height:48px}
+.contact-ig{margin-top:1.6rem;font-size:.9rem;color:var(--sub);line-height:1.7}
+.contact-ig a{display:inline-flex;align-items:center;gap:.4rem;min-height:44px;color:var(--accent);text-decoration:none;font-weight:600}
+.contact-ig a:hover{text-decoration:underline}
+.contact-ig svg{width:15px;height:15px;flex-shrink:0}
 
 /* ── CONTACT ────────────────────── */
 #contact .sw{text-align:center}
@@ -367,7 +357,6 @@ a.hm:hover{color:var(--accent)}
   .cert-yr{font-size:.78rem}
   /* beyond code */
   .life-card{padding:1.25rem}
-  .reel-play{min-height:170px}
   /* contact */
   .contact-card{padding:2.5rem 1.25rem}
   .contact-h{font-size:1.5rem}
@@ -400,7 +389,6 @@ a.hm:hover{color:var(--accent)}
   .btn-primary:hover{box-shadow:0 4px 20px rgba(56,189,248,.22)}
   .btn-ghost:hover{background:transparent;border-color:var(--border)}
   .stat:hover,.exp-card:hover,.sk-cat:hover,.edu-card:hover,.cert-card:hover,.life-card:hover{border-color:var(--border);box-shadow:none}
-  .reel-play:hover{border-color:var(--border)}
   .proj:hover::before{opacity:0}
   .pill:hover{background:rgba(255,255,255,.035);border-color:var(--border);color:var(--sub)}
   .mob a:hover{transform:none}
@@ -707,25 +695,6 @@ a.hm:hover{color:var(--accent)}
     <div class="life-card fade-in d1"><div class="life-icon">🤸</div><div class="life-title">Calisthenics</div><p class="life-desc">Training front lever, back lever, planche and handstand progressions, and sharing what I learn on Instagram.</p></div>
     <div class="life-card fade-in d2"><div class="life-icon">✈️</div><div class="life-title">Travel</div><p class="life-desc">Kerala, the Ellora &amp; Ajanta caves and many more places. I share my trips on Instagram too.</p></div>
   </div>
-  <div class="reels fade-in">
-    <div class="reel" data-ig="https://www.instagram.com/p/DT-t_nJCIij/">
-      <button class="reel-play" type="button" aria-label="Play my Push Day calisthenics reel">
-        <span class="reel-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
-        <span class="reel-t">Push Day — calisthenics</span>
-        <span class="reel-s">Instagram reel · tap to play</span>
-      </button>
-    </div>
-    <div class="reel" data-ig="https://www.instagram.com/p/DUN9SpECLPW/">
-      <button class="reel-play" type="button" aria-label="Play my Pull Day calisthenics reel">
-        <span class="reel-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
-        <span class="reel-t">Pull Day — calisthenics</span>
-        <span class="reel-s">Instagram reel · tap to play</span>
-      </button>
-    </div>
-  </div>
-  <div class="ig-cta fade-in">
-    <a href="https://www.instagram.com/samdoescal/" class="btn btn-ghost mag" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Follow @samdoescal on Instagram ↗</a>
-  </div>
 </div>
 
 <!-- CONTACT -->
@@ -745,6 +714,7 @@ a.hm:hover{color:var(--accent)}
         <a href="https://github.com/Sam15246" class="btn btn-ghost mag" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>GitHub</a>
         <a href="Syed_Ali_Mujtaba_Resume.pdf" class="btn btn-ghost mag" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>Resume</a>
       </div>
+      <p class="contact-ig">When I'm not coding, I'm training calisthenics. <a href="https://www.instagram.com/samdoescal/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Watch on Instagram @samdoescal ↗</a></p>
     </div>
   </div>
 </div>
@@ -993,25 +963,6 @@ function type(){
   setTimeout(type,del?45:75);
 }
 type();
-
-// ── INSTAGRAM REELS ──────────────────────────────────────────
-// Instagram's official embed, loaded only after a tap: the page stays fast on phones and
-// no Instagram scripts or trackers load for visitors who don't press play.
-let igScript = null;
-const loadIg = () => igScript || (igScript = new Promise((res, rej) => {
-  const s = document.createElement('script');
-  s.src = 'https://www.instagram.com/embed.js'; s.async = true; s.onload = res; s.onerror = rej;
-  document.body.appendChild(s);
-}));
-document.querySelectorAll('.reel').forEach(reel => {
-  reel.querySelector('.reel-play').addEventListener('click', () => {
-    const url = reel.dataset.ig;
-    // If Instagram can't load (blocked or offline), the link inside still works.
-    reel.innerHTML = '<blockquote class="instagram-media" data-instgrm-permalink="' + url + '?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"><a href="' + url + '" target="_blank" rel="noopener">Watch this reel on Instagram ↗</a></blockquote>';
-    reel.classList.add('loaded');
-    loadIg().then(() => { if (window.instgrm) window.instgrm.Embeds.process(); }).catch(() => {});
-  });
-});
 
 // ── FOOTER YEAR ─────────────────────────────────────────────
 document.getElementById('yr').textContent = new Date().getFullYear();
